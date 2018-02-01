@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Karan Balakrishnan</title>
+	<meta name="title" content="Karan Balakrishnan" />
+	<meta name="description" content="My web page" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="author" content="Karan B">
+<!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/scroll.css">
+  <link href='css/main.css' rel='stylesheet' type='text/css'>
+  <link href='css/textPlay.css' rel='stylesheet' type='text/css'>
+  <link href='css/animate.css' rel='stylesheet' type='text/css'>
+  <link href='css/rain.css' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/customTimeline.css"> <!-- Resource style -->
+
+<!-- JS -->
+  <script src="https://use.fontawesome.com/230e98b440.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <script type="text/javascript" src="js/meny.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Stupid inline css - To remove -->
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background-image: url(resources/img/2.png);
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+    
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+      font-size: 13px;
+      color: #000;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+    }
+    .back:hover {
+      color: black;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    
+    header {
+      position: relative;
+      z-index: 10;
+    }
+    .main section .page_container {
+      height:100%;
+      position: relative;
+      top: 0%;
+      margin: 0 auto 0;
+      z-index: 3;
+    }
+    .main section  {
+      overflow: hidden;
+    }
+    
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+    }
+    
+    .main section.page1 {
+      background:rgb(230, 217, 200);
+    }
+    .main section.page1 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page1 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      width: 435px;
+      line-height: 160%;
+    }
+    .main section .page_container .btns {
+      clear: both;
+      float: left;
+      text-align: center;
+      width: 435px;
+    }
+    .main section .page_container .btns a{
+      text-align: center;
+    }
+    .main section.page2 {
+      background: url(resources/img/wall.jpg);
+      background-size: cover;
+    }
+    .main section.page2 > img {
+      position: absolute;
+      top: -300px;
+      left: 50%;
+      margin-left: -1095px;
+    }
+    .main section.page2 .page_container {
+      overflow: hidden;
+    }
+    .main section.page2 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 50px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    .main section.page2 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+    .viewing-page-1 .back{
+      display: none;
+      }
+    .viewing-page-2 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: #FFF;
+      }
+    
+    .main section.page3 .page_container {
+      overflow: hidden;
+      width: 85%;
+      height: 86%;
+      top: 7%;
+    }
+    
+    
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+    
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
+	</style>
+  
+	<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();      
+});
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 200,
+        loop: false
+      });
+		});
+		
+	</script>
+</head>
+<body>
+<div class="meny" style="    background-image: url(resources/img/bb.png);">
+   <div class = "menuItemDiv" id = "menuItem1">
+      <p class = "menuItemP">Top</p>
+   </div> 
+   <div class = "menuItemDiv" id = "menuItem2"> 
+      <p class = "menuItemP">My Work</p>  
+   </div> 
+   <div class = "menuItemDiv" id = "menuItem3">
+      <p class = "menuItemP">Timeline</p> 
+   </div>  
+   <div class = "menuItemDiv" id = "menuItem4">
+      <p class = "menuItemP">Contact Me</p>
+   </div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+    <div class="chunk"></div>
+</div>
+<div class="meny-arrow"></div>
+
+<div class="contents" style="height:100%">
+  <div class="wrapper">
+	  <div class="main">
+      <section class="page1">
+        <div class="page_container">
+           <img id = "myface" src="resources/img/myface.jpg">
+            <p class = "animated fadeInLeft"id="firstPageText">Karan Balakrishnan </br>
+                    Computer Science Masters Student </br>
+                    University Of Southern California</p>
+             <img class = "logos animated slideInUp" id ="uscLogo" src="resources/img/usc.jpg"> 
+             <img class = "logos animated slideInUp" id ="bmsitLogo"src="resources/img/bmsit.png"> 
+             <img class = "logos animated slideInUp" id ="bcbsLogo"src="resources/img/bcbs.png">     
+              <video id="videoFirstPage"autoplay loop class="fillWidth" >
+                      ds       <source src="resources/video/MP4/test1.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                            <source src="resources/video/WEBM/test1.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+             </video>  
+             <span id="scrollIndicator"class="scroll-btn">
+               <a href="#">
+                  <span class="mouse">
+                    <span>
+                    </span>
+                  </span>
+                </a>
+                <p style="margin-left:-55px">scroll me</p>
+
+              </span>  
+              <a id="resumeLink" href="resources/files/resume.pdf" target="_blank">My Resume</a>
+  	    </div>
+      </section>
+	    
+	    <section class="page2">
+
+	      <div class="page_container">
+            
+          <h2 id="myWorkHeader">My Work</h2>
+            <div id="alphabetSoupContainer">
+                 <div id="alphabetContainer" style="height:100%" class="page1">
+                      <div id="loader"></div>
+                             <div id="soup-container">
+                               <div id="segments">
+                              </div>
+                             <div id="soup-nav" class ="page1nav">
+                                  <span id="soup-prev"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></span>
+                                 <span id="soup-next"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>
+                             </div>
+                        </div> 
+                  </div>            
+            </div>
+            <div id="imageContainer">
+               <div id="imageInnerContainer" class = "imageSlideShowContainer" > 
+                  <!-- <div id="three-container1"></div> -->
+
+                  <div id="imgWrapper">
+                    <img id="workImage1"class="bottom ios1" src="resources/img/spacegame.jpg" />
+                    <img id="workImage2"class="top ios2" src="resources/img/spacegame2.jpg" />
+                    <!-- <img style="width:100%"class="top" src="img/sap2.png" />
+                    <img style="width:100%"class="top" src="img/sap1.jpg" /> -->
+                  </div>
+              </div>  
+              <div id ="descDiv">
+                <p id="descP">Space Commute is a iOS game made using GameKit. It is your classic space shooter, with multiple levels<br><br>
+                  Feeder is a app I am currently wokring on, that will aggregate search results from multiple sources like, Twitter, Facebook, Quora, various news channels etc. Perform some basic analysis and give you overall consolidated information about a topic.
+                      <ul id="descList">
+                        <li>Native iOS Charting Library</li> 
+                        <li>Push Notifications</li> 
+                        <li>Animations</li> 
+                        <li>Memory and Performance enhancements</li> 
+                        <li>Hybrid JS+iOS interface</li> 
+                      </ul>
+                 </p>
+              </div>
+             </div>
+	      </div>
+      </section>
+	    
+	    <section class="page3">
+        <div id="timelineOverlay" style="display:none"></div>
+	      <div class="page_container">
+        <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+     <!-- 2 -->
+           <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+      <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+      <!-- 3 -->
+      <script type="text/javascript">
+        var additionalOptions = {
+              start_at_end: true
+            }
+
+        timeline = new TL.Timeline('timeline-embed',
+          'https://docs.google.com/spreadsheets/d/11zAyY8te3BNHWL2PEOJPfL90PxN2gJB4G8JHkxgBD7I/edit#gid=0',additionalOptions);
+      </script>
+
+  	    </div>
+
+      </section>
+      <section class="page4">
+        <div class="page_container" style="background-image: url('resources/img/img3.jpg');">
+          <p id="contactP1" style="font-family:Pacifico, cursive;">I am availiable for freelance work</p>
+          <p id="contactP2" style="font-family:Pacifico, cursive;font-size:x-large">Here are a few ways to contact me!</p>
+          <p id="contactP3">Call me at : +1(213)425-6556</p>
+          <div id = "iconContainer">
+            
+            <a title="LinkedIn" style="margin-left: 10px;"data-toggle="tooltip" data-placement="bottom"  href="https://www.linkedin.com/in/karan-balakrishnan-5b155582/"><img src="resources/img/Li.png" style="vertical-align:top"></a>
+            <a title="Facebook" style="margin-left: 2px;"data-toggle="tooltip" data-placement="bottom"  href="https://www.facebook.com/karan.b7"><img src="resources/img/fb.png" style="vertical-align:top;width:64px;"></a>
+            <a title="Github" style="margin-left: 14px;"data-toggle="tooltip" data-placement="bottom"  href="https://github.com/hitmank/"><img id="gitImg"src="resources/img/b.png" style="vertical-align:top;margin-left:7px"></a>
+            <a title="Email" style="margin-left: 7px;"data-toggle="tooltip" data-placement="bottom"  href="mailto:karan.b755@gmail.com?Subject=Hello"><i class="material-icons customIconStyle">email</i></a>
+            <a id="iosIcon" title="iOS" data-toggle="tooltip" data-placement="bottom"  href="www.facebook.com"><img src="resources/img/xcode.png" style="vertical-align:top;width:77px;"></a>
+          </div>
+          <div id = "mapContainer">
+            <iframe src="https://snazzymaps.com/embed/8241" width="100%" height="100%" style="border:none;"></iframe>
+          </div>
+        </div>
+      </section>    
+    </div>
+    <a id="backToTop"class="back" href="#">Back to the top</a>
+    <a id = "bannerLink" href="https://github.com/hitmank/hitmank.github.io"><img id ="bannerImage"style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Link to my GItHub"></a>
+  </div>
+</div>
+</body>
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+<script type="text/javascript" src="js/textPlay.js"></script>
+
+</html>
